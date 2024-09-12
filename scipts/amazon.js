@@ -33,6 +33,8 @@
     priceCents:1899
  }];*/
 
+ const cart=[];
+
  let productsHTML = '';
 
  products.forEach((product)=>{
