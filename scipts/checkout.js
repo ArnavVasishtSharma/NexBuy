@@ -1,6 +1,8 @@
 import { cart } from "../data/cart";
 import { products } from "../data/products";
 
+let cartSummaryHTML = '';
+
 cart.forEach((cartItem) => {
     const productId = cartItem.productId;
 
@@ -13,7 +15,7 @@ cart.forEach((cartItem) => {
     });
 
     
-    `
+    cartSummaryHTML+=`
 <div class="cart-item-container">
         <div class="delivery-date">
             Delivery date: Tuesday, June 21
@@ -89,5 +91,5 @@ cart.forEach((cartItem) => {
             </div>
             </div>
           </div>
-    `
-})
+    `;
+});
