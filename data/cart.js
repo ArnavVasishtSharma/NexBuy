@@ -1,4 +1,4 @@
-import { products } from "./products";
+import { products } from "./products"; 
 
 export const cart = [{
     productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
@@ -12,10 +12,10 @@ export const cart = [{
  {
     let matchingItem;
 
-    cart.forEach((item)=>{
-        if(productId === item.productId)
+    cart.forEach((cartItem)=>{
+        if(productId === cartItem.productId)
             {
-                matchingItem = item;
+                matchingItem = cartItem;
             }
     });
 
