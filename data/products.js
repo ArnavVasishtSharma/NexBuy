@@ -53,6 +53,10 @@ const product1 = new Product({
   ]
 });
 
+class Clothing extends Product{ 
+  
+}
+
 
 export const products = [
   {
