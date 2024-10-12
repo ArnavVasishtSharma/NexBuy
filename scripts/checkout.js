@@ -5,6 +5,23 @@ import { renderPaymentSummery } from '../scripts/Checkout/paymentSummery.js';
 import {  loadProductsFetch} from '../data/products.js';
 import { loadCart } from '../data/cart.js';
 
+
+async function loadPage(){
+   
+
+   await loadProductsFetch()
+
+   const value =  await new Promise((resolve)=>{
+      loadCart(()=>{
+         resolve();
+      });  
+   })
+   renderOrderSummary();
+   renderPaymentSummery();
+
+}
+loadPage();
+/*
 Promise.all([
    loadProductsFetch(),
    new Promise((resolve)=>{
