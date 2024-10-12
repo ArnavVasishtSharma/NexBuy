@@ -3,7 +3,7 @@ import { renderPaymentSummery } from '../scripts/Checkout/paymentSummery.js';
 //import '../data/cart-class.js';
 //import '../data/backend-practice.js';
 import {  loadProductsFetch} from '../data/products.js';
-import { loadCart } from '../data/cart.js';
+import { loadCart,loadCartFetch } from '../data/cart.js';
 
 
 async function loadPage(){
@@ -11,11 +11,7 @@ async function loadPage(){
 
    await loadProductsFetch()
 
-   const value =  await new Promise((resolve)=>{
-      loadCart(()=>{
-         resolve();
-      });  
-   })
+   await loadCartFetch();
    renderOrderSummary();
    renderPaymentSummery();
 
