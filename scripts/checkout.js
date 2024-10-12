@@ -8,10 +8,10 @@ import { loadCart,loadCartFetch } from '../data/cart.js';
 
 async function loadPage(){
    
-
-   await loadProductsFetch()
-
-   await loadCartFetch();
+   await Promise.all([
+      loadProductsFetch(),
+      loadCartFetch()
+    ]);
    renderOrderSummary();
    renderPaymentSummery();
 
