@@ -1,3 +1,7 @@
+body{
+  background-color:white;
+}
+
 .main {
   margin-top: 60px;
 }
@@ -71,8 +75,8 @@
   padding-left: 25px;
   padding-right: 25px;
 
-  border-right: 1px solid rgb(231, 231, 231);
-  border-bottom: 1px solid rgb(231, 231, 231);
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 
   display: flex;
   flex-direction: column;
@@ -153,4 +157,11 @@
   width: 100%;
   padding: 8px;
   border-radius: 50px;
+}
+.brandlogo{
+  font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+   color:white;
+    position: relative;
 }

@@ -1,5 +1,5 @@
 .amazon-header {
-  background-color: rgb(19, 25, 33);
+  background-color: rgb(0, 0, 0);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -81,19 +81,21 @@
 }
 
 .search-button {
-  background-color: rgb(254, 189, 105);
+  background-color: rgb(25, 169, 188);
   border: none;
   width: 45px;
   height: 40px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   flex-shrink: 0;
+  
 }
 
 .search-icon {
   height: 22px;
   margin-left: 2px;
   margin-top: 3px;
+  
 }
 
 .amazon-header-right-section {
@@ -136,7 +138,7 @@
 }
 
 .cart-quantity {
-  color: rgb(240, 136, 4);
+  color: rgb(249, 249, 249);
   font-size: 16px;
   font-weight: 700;
 

@@ -144,6 +144,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .buy-again-icon {
@@ -164,6 +165,7 @@
 @media (max-width: 800px) {
   .buy-again-button {
     margin-bottom: 10px;
+    text-decoration: none;
   }
 
   .product-actions {
@@ -203,6 +205,7 @@
   .buy-again-button {
     width: 100%;
     margin-bottom: 15px;
+    text-decoration: none;
   }
 
   .product-actions {
@@ -218,3 +221,11 @@
     padding: 12px;
   }
 }
+.brandlogo{
+  font-size:2rem;
+    font-weight: bold;
+    text-align: center;
+   color:white;
+    position: relative;
+}
+

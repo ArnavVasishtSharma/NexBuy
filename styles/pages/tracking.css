@@ -79,3 +79,13 @@
   border-radius: 50px;
   width: 50%;
 }
+
+.brandlogo{
+  font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+   color:white;
+    position: relative;
+    margin-top: 13px;
+}
+
