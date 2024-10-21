@@ -36,6 +36,7 @@ input, select, button {
 .button-primary:hover {
   background-color: rgb(55, 192, 179);
   border: 1px solid rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .button-primary:active {
@@ -52,6 +53,7 @@ input, select, button {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  text-decoration: none;
 }
 
 .button-secondary:hover {

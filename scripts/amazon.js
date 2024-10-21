@@ -49,8 +49,7 @@ loadProducts(renderProductsGrid);
   
     let filteredProducts = products;
   
-    // If a search exists in the URL parameters,
-    // filter the products that match the search.
+    // If a search exists in the URL parameters
     if (search) {
       filteredProducts = products.filter((product) => {
         return product.name.includes(search);
@@ -59,7 +58,7 @@ loadProducts(renderProductsGrid);
   
     filteredProducts.forEach((product) => {
         productsHTML += `
-            <div class="product-container">
+            <div class="product-container ">
                 <div class="product-image-container">
                     <img class="product-image"
                     src="${product.image}">
